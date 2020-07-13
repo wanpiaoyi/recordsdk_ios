@@ -33,6 +33,7 @@
 @property(strong,nonatomic) IBOutlet UIButton *btn_edict;//编辑按钮
 
 @property(strong,nonatomic) IBOutlet UIView *v_viewedict; //全选等控制
+@property(strong,nonatomic) IBOutlet UIView *v_top; //全选等控制
 
 @property(strong,nonatomic) IBOutlet UIButton *btn1;
 @property(strong,nonatomic) IBOutlet UIButton *btn2;
@@ -157,7 +158,9 @@
     
     self.v_exportview.layer.cornerRadius = 5;
     self.v_exportcancel.layer.cornerRadius = 5;
-    
+    if(useCount <= 1){
+        self.v_top.hidden = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -203,7 +206,7 @@
     self.select = tag;
     
     [self endEdict];
-    self.btn_edict.hidden = NO;
+    self.btn_edict.hidden = YES;
     WS(weakSelf);
     switch (tag) {
         case 1:
@@ -369,7 +372,24 @@
         default:
             break;
     }
-    self.selectView.frame = CGRectMake(0, 112, clipPubthings.screen_width, clipPubthings.screen_height - 112 - 0);
+    float safeTop = 20;
+    float safeBottom = 0;
+    // iPhone X以上设备iOS版本一定是11.0以上。
+    if (@available(iOS 11.0, *)) {
+        // 利用safeAreaInsets.bottom > 0.0来判断是否是iPhone X以上设备。
+        UIWindow * window = [[[UIApplication sharedApplication] delegate] window];
+        if (window.safeAreaInsets.bottom > 0.0) {
+            safeTop = window.safeAreaInsets.top;
+            safeBottom = window.safeAreaInsets.bottom;
+        }
+    }
+
+    
+    if(self.v_top.hidden == YES){
+        self.selectView.frame = CGRectMake(0, 54, clipPubthings.screen_width, clipPubthings.allHeight - 54 - safeTop  - safeBottom);
+    }else{
+        self.selectView.frame = CGRectMake(0, 100, clipPubthings.screen_width, clipPubthings.allHeight - 100 - safeTop  - safeBottom);
+    }
     
     
     

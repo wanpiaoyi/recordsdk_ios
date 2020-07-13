@@ -1,25 +1,26 @@
 //
-//  QKLiveViewController.m
+//  QKRecordViewController.m
 //  QKLiveSDK_Example
 //
 //  Created by yangpeng on 2020/7/7.
 //  Copyright © 2020 quklive. All rights reserved.
 //
 
-#import "QKLiveViewController.h"
+#import "QKRecordViewController.h"
 #import "LocalOrSystemVideos.h"
 #import "ClipPubThings.h"
+#import "QukanAlert.h"
 
 #import "VideoManager.h"
 #import "ChooseLocalLive.h"
 
-@interface QKLiveViewController ()
+@interface QKRecordViewController ()
 @property(strong,nonatomic) IBOutlet UITextField *fld_appkey;
-
+@property BOOL appkeySeted;
 @end
 
 
-@implementation QKLiveViewController
+@implementation QKRecordViewController
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     //状态栏占据位置
@@ -73,6 +74,7 @@
         NSString *msg = [NSString stringWithFormat:@"%@",[data objectForKey:@"msg"]];
         if([code isEqualToString:@"0"])
         {
+            self.appkeySeted = YES;
             //appkey验证通过后执行的方法
             [pgToast setText:@"Appkey 设置成功"];
         }else{
@@ -88,19 +90,30 @@
 
 //录播
 -(IBAction)startRecord:(id)sender{
+    if(!self.appkeySeted){
+        [QukanAlert alertMsg:@"请设置appkey"];
+        return;
+    }
     [clipPubthings startLocalRecord];
 }
 
 
 //录制列表
 -(IBAction)showRecord:(id)sender{
+    if(!self.appkeySeted){
+        [QukanAlert alertMsg:@"请设置appkey"];
+        return;
+    }
     ChooseLocalLive *live = [[ChooseLocalLive alloc] init];
     [self.navigationController pushViewController:live animated:YES];
 }
 
 //选择本地视频或者其他视频
 -(IBAction)movieEdict:(id)sender{
-
+    if(!self.appkeySeted){
+        [QukanAlert alertMsg:@"请设置appkey"];
+        return;
+    }
     [LocalOrSystemVideos getVideos:^(NSArray *array) {
         [clipPubthings showClipController:array];
     } copyFile:2 showimg:YES justOne:NO showVideo:YES];

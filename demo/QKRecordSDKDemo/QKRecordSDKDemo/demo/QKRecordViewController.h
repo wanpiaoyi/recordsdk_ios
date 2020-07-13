@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QKLiveViewController : UIViewController
+@interface QKRecordViewController : UIViewController
 
 @end
 

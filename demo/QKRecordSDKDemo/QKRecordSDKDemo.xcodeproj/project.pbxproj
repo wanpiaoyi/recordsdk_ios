@@ -13,7 +13,7 @@
 		2F8A948424BC691F00DDCD39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A948324BC691F00DDCD39 /* Assets.xcassets */; };
 		2F8A948724BC691F00DDCD39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A948524BC691F00DDCD39 /* LaunchScreen.storyboard */; };
 		2F8A948A24BC691F00DDCD39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A948924BC691F00DDCD39 /* main.m */; };
-		2F8A94AD24BC696300DDCD39 /* QKLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A949324BC696300DDCD39 /* QKLiveViewController.xib */; };
+		2F8A94AD24BC696300DDCD39 /* QKRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A949324BC696300DDCD39 /* QKRecordViewController.xib */; };
 		2F8A94AE24BC696300DDCD39 /* Commav.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A949424BC696300DDCD39 /* Commav.m */; };
 		2F8A94AF24BC696300DDCD39 /* downline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A949724BC696300DDCD39 /* downline@2x.png */; };
 		2F8A94B024BC696300DDCD39 /* qktool_record_fileEdict@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A949824BC696300DDCD39 /* qktool_record_fileEdict@2x.png */; };
@@ -30,7 +30,7 @@
 		2F8A94BB24BC696400DDCD39 /* RecordListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A94A624BC696300DDCD39 /* RecordListCell.xib */; };
 		2F8A94BC24BC696400DDCD39 /* ChooseLocalLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A94A924BC696300DDCD39 /* ChooseLocalLive.m */; };
 		2F8A94BD24BC696400DDCD39 /* ChooseLocalLive.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A94AA24BC696300DDCD39 /* ChooseLocalLive.xib */; };
-		2F8A94BE24BC696400DDCD39 /* QKLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A94AC24BC696300DDCD39 /* QKLiveViewController.m */; };
+		2F8A94BE24BC696400DDCD39 /* QKRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A94AC24BC696300DDCD39 /* QKRecordViewController.m */; };
 		BABB1C01EFA0810952450D4F /* Pods_QKRecordSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A92BFFFE76B729C35114DFC /* Pods_QKRecordSDKDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,9 +46,9 @@
 		2F8A948624BC691F00DDCD39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F8A948824BC691F00DDCD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F8A948924BC691F00DDCD39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2F8A949124BC696300DDCD39 /* QKLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKLiveViewController.h; sourceTree = "<group>"; };
+		2F8A949124BC696300DDCD39 /* QKRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKRecordViewController.h; sourceTree = "<group>"; };
 		2F8A949224BC696300DDCD39 /* Commav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commav.h; sourceTree = "<group>"; };
-		2F8A949324BC696300DDCD39 /* QKLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKLiveViewController.xib; sourceTree = "<group>"; };
+		2F8A949324BC696300DDCD39 /* QKRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKRecordViewController.xib; sourceTree = "<group>"; };
 		2F8A949424BC696300DDCD39 /* Commav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commav.m; sourceTree = "<group>"; };
 		2F8A949724BC696300DDCD39 /* downline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downline@2x.png"; sourceTree = "<group>"; };
 		2F8A949824BC696300DDCD39 /* qktool_record_fileEdict@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qktool_record_fileEdict@2x.png"; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		2F8A94A924BC696300DDCD39 /* ChooseLocalLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseLocalLive.m; sourceTree = "<group>"; };
 		2F8A94AA24BC696300DDCD39 /* ChooseLocalLive.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseLocalLive.xib; sourceTree = "<group>"; };
 		2F8A94AB24BC696300DDCD39 /* ChooseLocalLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseLocalLive.h; sourceTree = "<group>"; };
-		2F8A94AC24BC696300DDCD39 /* QKLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKLiveViewController.m; sourceTree = "<group>"; };
+		2F8A94AC24BC696300DDCD39 /* QKRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKRecordViewController.m; sourceTree = "<group>"; };
 		5A92BFFFE76B729C35114DFC /* Pods_QKRecordSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QKRecordSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		806CA10B6CFFAA5B8B47D083 /* Pods-QKRecordSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QKRecordSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,9 +126,9 @@
 			children = (
 				2F8A949224BC696300DDCD39 /* Commav.h */,
 				2F8A949424BC696300DDCD39 /* Commav.m */,
-				2F8A949124BC696300DDCD39 /* QKLiveViewController.h */,
-				2F8A94AC24BC696300DDCD39 /* QKLiveViewController.m */,
-				2F8A949324BC696300DDCD39 /* QKLiveViewController.xib */,
+				2F8A949124BC696300DDCD39 /* QKRecordViewController.h */,
+				2F8A94AC24BC696300DDCD39 /* QKRecordViewController.m */,
+				2F8A949324BC696300DDCD39 /* QKRecordViewController.xib */,
 				2F8A949524BC696300DDCD39 /* recordList */,
 			);
 			path = demo;
@@ -268,7 +268,7 @@
 				2F8A94BA24BC696400DDCD39 /* RecordNothingCell.xib in Resources */,
 				2F8A94AF24BC696300DDCD39 /* downline@2x.png in Resources */,
 				2F8A94B024BC696300DDCD39 /* qktool_record_fileEdict@2x.png in Resources */,
-				2F8A94AD24BC696300DDCD39 /* QKLiveViewController.xib in Resources */,
+				2F8A94AD24BC696300DDCD39 /* QKRecordViewController.xib in Resources */,
 				2F8A948724BC691F00DDCD39 /* LaunchScreen.storyboard in Resources */,
 				2F8A94BD24BC696400DDCD39 /* ChooseLocalLive.xib in Resources */,
 				2F8A94B624BC696400DDCD39 /* qktool_more_selected@2x.png in Resources */,
@@ -348,7 +348,7 @@
 				2F8A94BC24BC696400DDCD39 /* ChooseLocalLive.m in Sources */,
 				2F8A947F24BC691E00DDCD39 /* ViewController.m in Sources */,
 				2F8A94B724BC696400DDCD39 /* RecordListCell.m in Sources */,
-				2F8A94BE24BC696400DDCD39 /* QKLiveViewController.m in Sources */,
+				2F8A94BE24BC696400DDCD39 /* QKRecordViewController.m in Sources */,
 				2F8A947924BC691E00DDCD39 /* AppDelegate.m in Sources */,
 				2F8A94AE24BC696300DDCD39 /* Commav.m in Sources */,
 				2F8A94B824BC696400DDCD39 /* LiveRecordOrLocalRecord.m in Sources */,
@@ -429,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -481,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -498,11 +498,12 @@
 				DEVELOPMENT_TEAM = 9XH5D76XJS;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = QKRecordSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ReNew.QKRecordSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReNew.qukana;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -517,11 +518,12 @@
 				DEVELOPMENT_TEAM = 9XH5D76XJS;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = QKRecordSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ReNew.QKRecordSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReNew.qukana;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
