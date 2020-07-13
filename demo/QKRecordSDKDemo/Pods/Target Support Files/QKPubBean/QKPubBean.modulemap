@@ -1,0 +1,6 @@
+framework module QKPubBean {
+  umbrella header "QKPubBean-umbrella.h"
+
+  export *
+  module * { export * }
+}

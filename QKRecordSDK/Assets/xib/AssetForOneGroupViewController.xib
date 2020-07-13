@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssetForOneGroupViewController">
+            <connections>
+                <outlet property="bottom" destination="YFO-W2-Gv8" id="yYu-16-uML"/>
+                <outlet property="selectSend" destination="hdg-X2-RUU" id="zSd-ue-KRU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWH-hq-hl0" userLabel="mainView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-Mk-bcJ">
+                            <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qukan3_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="lE7-vC-qrW">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="uDU-om-2HN"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-X2-RUU">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                    <color key="backgroundColor" red="0.27843137254901962" green="0.52549019607843139" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="确定 (0)">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="selectSend:" destination="-1" eventType="touchUpInside" id="ofz-8v-abU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="hdg-X2-RUU" firstAttribute="top" secondItem="SeI-Mk-bcJ" secondAttribute="top" id="6Ff-MK-l3H"/>
+                                <constraint firstAttribute="trailing" secondItem="hdg-X2-RUU" secondAttribute="trailing" id="HrK-iE-U5t"/>
+                                <constraint firstAttribute="height" constant="50" id="K9X-qk-xzK"/>
+                                <constraint firstAttribute="trailing" secondItem="lE7-vC-qrW" secondAttribute="trailing" id="QKh-LZ-6z3"/>
+                                <constraint firstAttribute="bottom" secondItem="hdg-X2-RUU" secondAttribute="bottom" id="Vhf-EM-9gv"/>
+                                <constraint firstItem="lE7-vC-qrW" firstAttribute="leading" secondItem="SeI-Mk-bcJ" secondAttribute="leading" id="edV-aW-ffR"/>
+                                <constraint firstItem="hdg-X2-RUU" firstAttribute="leading" secondItem="SeI-Mk-bcJ" secondAttribute="leading" id="uif-nO-5kR"/>
+                                <constraint firstItem="lE7-vC-qrW" firstAttribute="top" secondItem="SeI-Mk-bcJ" secondAttribute="top" id="wDV-nQ-G3N"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SeI-Mk-bcJ" firstAttribute="leading" secondItem="cWH-hq-hl0" secondAttribute="leading" id="6EV-uK-GaW"/>
+                        <constraint firstAttribute="trailing" secondItem="SeI-Mk-bcJ" secondAttribute="trailing" id="DEa-4N-Xi4"/>
+                        <constraint firstAttribute="bottom" secondItem="SeI-Mk-bcJ" secondAttribute="bottom" id="pCO-EW-Bm0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cWH-hq-hl0" secondAttribute="trailing" id="Cag-F3-xmP"/>
+                <constraint firstItem="cWH-hq-hl0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="T1M-5K-sru"/>
+                <constraint firstAttribute="bottom" secondItem="cWH-hq-hl0" secondAttribute="bottom" id="YFO-W2-Gv8"/>
+                <constraint firstItem="cWH-hq-hl0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="spS-a8-SKT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="182.40000000000001" y="377.81109445277366"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qukan3_line.png" width="320" height="1"/>
+    </resources>
+</document>

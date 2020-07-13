@@ -1,0 +1,6 @@
+framework module QKRecordSDK {
+  umbrella header "QKRecordSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

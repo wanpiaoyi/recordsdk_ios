@@ -1,0 +1,6 @@
+framework module QKLiveAndRecord {
+  umbrella header "QKLiveAndRecord.h"
+
+  export *
+  module * { export * }
+}

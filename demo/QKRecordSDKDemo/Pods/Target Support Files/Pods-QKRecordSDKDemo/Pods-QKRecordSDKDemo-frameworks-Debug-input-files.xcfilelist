@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${PODS_ROOT}/QKPubBean/QKPubBean/framework/QKLiveAndRecord.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework

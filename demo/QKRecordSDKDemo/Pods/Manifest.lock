@@ -1,0 +1,33 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - QKPubBean (1.0.0):
+    - FMDB
+    - SVProgressHUD
+  - QKRecordSDK (0.0.1):
+    - QKPubBean
+    - QKRecordSDK/clipSdkDemo (= 0.0.1)
+  - QKRecordSDK/clipSdkDemo (0.0.1):
+    - QKPubBean
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - QKRecordSDK (~> 0.0.1)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - QKPubBean
+    - QKRecordSDK
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  QKPubBean: fb5b20efc477a8db10de603009f54c9abffc76d4
+  QKRecordSDK: 9e4fcc3b5c60340c0f3ac28a09462ae3fe427d6b
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: c2d6611df41605968ea3efc7b34cec09ac0b9549
+
+COCOAPODS: 1.9.3
