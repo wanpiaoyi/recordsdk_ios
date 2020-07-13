@@ -315,7 +315,7 @@
         default:
             break;
     }
-    self.selectView.frame = CGRectMake(0, 112, clipPubthings.screen_width, clipPubthings.screen_height - 112 );
+    self.selectView.frame = CGRectMake(0, 94, clipPubthings.screen_width, clipPubthings.screen_height - 94 );
     
     
     

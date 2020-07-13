@@ -13,6 +13,7 @@
 #import "OSSSqlite.h"
 #import "NothingCell.h"
 #import "ClipPubThings.h"
+#import "PubBundle.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
 @implementation SelectVideoByType
@@ -93,7 +94,7 @@
         
         NothingCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
         if (cell == nil) {
-            NSArray *array = [[clipPubthings clipBundle] loadNibNamed:@"NothingCell" owner:nil options:nil];
+            NSArray *array = [[PubBundle bundle] loadNibNamed:@"NothingCell" owner:nil options:nil];
             cell = [array objectAtIndex:0];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
