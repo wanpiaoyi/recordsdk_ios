@@ -212,8 +212,8 @@
 				2F8A947024BC691E00DDCD39 /* Sources */,
 				2F8A947124BC691E00DDCD39 /* Frameworks */,
 				2F8A947224BC691E00DDCD39 /* Resources */,
-				7D2399B1A4D627CAD0DD3C5C /* [CP] Embed Pods Frameworks */,
-				3847845D22F40BB0BC96D502 /* [CP] Copy Pods Resources */,
+				28B3A6D1C657FEB9C4447790 /* [CP] Embed Pods Frameworks */,
+				EB4A6170AA4887FAB21743D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +282,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		28B3A6D1C657FEB9C4447790 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2C48555AD311DF79BC15836B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,7 +321,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3847845D22F40BB0BC96D502 /* [CP] Copy Pods Resources */ = {
+		EB4A6170AA4887FAB21743D8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,23 +336,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7D2399B1A4D627CAD0DD3C5C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

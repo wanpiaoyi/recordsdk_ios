@@ -1,5 +1,5 @@
 use_frameworks!
 platform:ios,'9.0'
 target 'QKRecordSDKDemo' do
-  pod 'QKRecordSDK','~> 0.0.1'
+  pod 'QKRecordSDK','~> 1.0.1'
 end
