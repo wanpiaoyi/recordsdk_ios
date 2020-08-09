@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		16178B0F6B1C60DBCEB66187 /* Pods-QKRecordSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QKRecordSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		2F8A947424BC691E00DDCD39 /* QKRecordSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QKRecordSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8A947424BC691E00DDCD39 /* 短视频sdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "短视频sdk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8A947724BC691E00DDCD39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F8A947824BC691E00DDCD39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2F8A947D24BC691E00DDCD39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		2F8A947524BC691E00DDCD39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F8A947424BC691E00DDCD39 /* QKRecordSDKDemo.app */,
+				2F8A947424BC691E00DDCD39 /* 短视频sdk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,8 +212,8 @@
 				2F8A947024BC691E00DDCD39 /* Sources */,
 				2F8A947124BC691E00DDCD39 /* Frameworks */,
 				2F8A947224BC691E00DDCD39 /* Resources */,
-				28B3A6D1C657FEB9C4447790 /* [CP] Embed Pods Frameworks */,
-				EB4A6170AA4887FAB21743D8 /* [CP] Copy Pods Resources */,
+				8CA04BA90BA815E24A2D4530 /* [CP] Embed Pods Frameworks */,
+				9C0C0EDAFE27091D28B07D47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,7 +221,7 @@
 			);
 			name = QKRecordSDKDemo;
 			productName = QKRecordSDKDemo;
-			productReference = 2F8A947424BC691E00DDCD39 /* QKRecordSDKDemo.app */;
+			productReference = 2F8A947424BC691E00DDCD39 /* 短视频sdk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -282,23 +282,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		28B3A6D1C657FEB9C4447790 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2C48555AD311DF79BC15836B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,7 +304,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB4A6170AA4887FAB21743D8 /* [CP] Copy Pods Resources */ = {
+		8CA04BA90BA815E24A2D4530 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C0C0EDAFE27091D28B07D47 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -494,8 +494,9 @@
 			baseConfigurationReference = 806CA10B6CFFAA5B8B47D083 /* Pods-QKRecordSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XH5D76XJS;
+				DEVELOPMENT_TEAM = F7JE6U5ZUN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = QKRecordSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -504,7 +505,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ReNew.qukana;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "短视频sdk";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -514,8 +516,9 @@
 			baseConfigurationReference = 16178B0F6B1C60DBCEB66187 /* Pods-QKRecordSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9XH5D76XJS;
+				DEVELOPMENT_TEAM = F7JE6U5ZUN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = QKRecordSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -524,7 +527,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ReNew.qukana;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "短视频sdk";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

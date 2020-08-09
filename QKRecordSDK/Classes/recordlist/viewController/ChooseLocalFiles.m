@@ -91,7 +91,7 @@
     [self.btn_title setTitle:@"选择源文件" forState:UIControlStateNormal];
 
     NSInteger useCount = 0;
-    if(self.showRecord){
+    if(self.showLive){
         self.btn1.frame = CGRectMake(useCount*width, 0, width, 38);
         useCount++;
         if(self.selectFirst == -1){
@@ -100,7 +100,7 @@
     }else{
         self.btn1.hidden = YES;
     }
-    if(self.showLive){
+    if(self.showRecord){
         self.btn2.frame = CGRectMake(width*useCount, 0, width, 38);
         useCount++;
         if(self.selectFirst == -1){

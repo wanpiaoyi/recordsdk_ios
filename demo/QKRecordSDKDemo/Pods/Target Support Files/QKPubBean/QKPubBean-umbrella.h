@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "AlertSignCell.h"
+#import "AlertSignChooseBean.h"
+#import "AlertSignChooseView.h"
 #import "BaseViewController.h"
 #import "HeaderFile.h"
 #import "ImageLocalSave.h"

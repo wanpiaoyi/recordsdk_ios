@@ -2,7 +2,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - QKPubBean (1.0.0):
+  - QKPubBean (1.0.1):
     - FMDB
     - SVProgressHUD
   - QKRecordSDK (1.0.1):
@@ -24,10 +24,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  QKPubBean: fb5b20efc477a8db10de603009f54c9abffc76d4
+  QKPubBean: be50afad1f4c4756aeb9b601e04f4e44a1a2fb2b
   QKRecordSDK: b78c2ac12893cc36e5badd5f4d3ea1e0b0aa85e5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: d13d13d4b6c5dd8a1e490580da48c4c5f96d1dbe
+PODFILE CHECKSUM: e164ca4abf4a12eb2aab8e662ac7abfe91683585
 
 COCOAPODS: 1.9.3

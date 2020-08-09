@@ -14,10 +14,10 @@ QKRecordSDK
 在Info.plist中添加以下权限。  
 Privacy - Camera Usage Description  
 Privacy - Bluetooth Peripheral Usage Description  
+Privacy - Bluetooth Always Usage Description
 Privacy - Microphone Usage Description  
 Privacy - Photo Library Additions Usage Description  
 Privacy - Photo Library Usage Description  
-Privacy - Photo Library Usage Description    
   
 3、初始化sdk  
 导入头文件ClipPubThings.h.  
