@@ -438,7 +438,7 @@
                                            userInfo:nil
                                             repeats:YES];
             [self.btn_startButton setTitle:[NSString stringWithFormat:@"3"] forState:UIControlStateNormal];
-            [self.btn_startButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@""]] forState:UIControlStateNormal];
+            [self.btn_startButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@""] inBundle:[clipPubthings clipBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
 
             [self change:AudioChangeRecordPath value:0 path:@""];
             [self change:AudioChangeBackValue value:0 path:nil];
@@ -534,7 +534,7 @@
         [self.moviesPart setRecordStartTime:startTime];
 
     }else{
-        [self.btn_startButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@""]] forState:UIControlStateNormal];
+        [self.btn_startButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@""] inBundle:[clipPubthings clipBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [self.btn_startButton setTitle:[NSString stringWithFormat:@"%d",3 - self.nowThreeTime] forState:UIControlStateNormal];
     }
     [self.lock unlock];

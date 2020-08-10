@@ -237,7 +237,7 @@
             weakSelf.choose(data,1);
         }
     }];
-    [cell.btn_zc setImage:[UIImage imageNamed:data.transfer.img_transfer] forState:UIControlStateNormal];
+    [cell.btn_zc setImage:[UIImage imageNamed:data.transfer.img_transfer inBundle:[clipPubthings clipBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
 
     return cell;
 }

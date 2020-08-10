@@ -516,7 +516,7 @@
                 img.frame = CGRectMake(0, rect.origin.y, rect_showView.size.width, rect.size.height);
             }
             NSLog(@"%@ subPre.padding:%d",subPre.img_name,subPre.padding);
-            img.image = [UIImage imageNamed:subPre.img_name];
+            img.image = [UIImage imageNamed:subPre.img_name inBundle:[clipPubthings clipBundle] compatibleWithTraitCollection:nil];
             [_v_showview addSubview:img];
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             btn.frame = rect;
@@ -546,7 +546,7 @@
                 [_v_showview addSubview:lbl];
             }else{
                 UIImageView *imgView = [[UIImageView alloc] initWithFrame:rect_background];
-                UIImage *img = [UIImage imageNamed:subPre.img_name];
+                UIImage *img = [UIImage imageNamed:subPre.img_name inBundle:[clipPubthings clipBundle] compatibleWithTraitCollection:nil];
 //                NSLog(@"rect:%@ imgname:%@",NSStringFromCGRect(rect_background),subPre.img_name);
                 img = [img stretchableImageWithLeftCapWidth:20 topCapHeight:15];
                 imgView.image = img;

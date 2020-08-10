@@ -123,7 +123,7 @@
     static NSString *str = @"cell";
     MovieTransfer *transfer = self.array[indexPath.row];
     MovieChooseTransferCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:str forIndexPath:indexPath];
-    cell.img_transfer.image = [UIImage imageNamed:transfer.img_name];
+    cell.img_transfer.image = [UIImage imageNamed:transfer.img_name inBundle:[clipPubthings clipBundle] compatibleWithTraitCollection:nil];
     cell.lbl_name.text = transfer.name;
     if(self.selectPart != nil){
         if(transfer.type == self.selectPart.transfer.type){

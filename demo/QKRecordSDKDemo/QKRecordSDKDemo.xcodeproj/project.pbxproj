@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F8434EF24E0E32200D3D6AE /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8434EE24E0E32200D3D6AE /* Bugly.framework */; };
 		2F8A947924BC691E00DDCD39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A947824BC691E00DDCD39 /* AppDelegate.m */; };
 		2F8A947F24BC691E00DDCD39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A947E24BC691E00DDCD39 /* ViewController.m */; };
 		2F8A948224BC691E00DDCD39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A948024BC691E00DDCD39 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		16178B0F6B1C60DBCEB66187 /* Pods-QKRecordSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QKRecordSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-QKRecordSDKDemo/Pods-QKRecordSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2F8434EE24E0E32200D3D6AE /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
 		2F8A947424BC691E00DDCD39 /* 短视频sdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "短视频sdk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8A947724BC691E00DDCD39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F8A947824BC691E00DDCD39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8434EF24E0E32200D3D6AE /* Bugly.framework in Frameworks */,
 				BABB1C01EFA0810952450D4F /* Pods_QKRecordSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +114,7 @@
 				2F8A947824BC691E00DDCD39 /* AppDelegate.m */,
 				2F8A947D24BC691E00DDCD39 /* ViewController.h */,
 				2F8A947E24BC691E00DDCD39 /* ViewController.m */,
+				2F8434EE24E0E32200D3D6AE /* Bugly.framework */,
 				2F8A949024BC695100DDCD39 /* demo */,
 				2F8A948024BC691E00DDCD39 /* Main.storyboard */,
 				2F8A948324BC691F00DDCD39 /* Assets.xcassets */,
@@ -498,6 +502,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7JE6U5ZUN;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QKRecordSDKDemo",
+				);
 				INFOPLIST_FILE = QKRecordSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,6 +528,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7JE6U5ZUN;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QKRecordSDKDemo",
+				);
 				INFOPLIST_FILE = QKRecordSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "QKRecordViewController.h"
 #import "Commav.h"
+#import <Bugly/Bugly.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Bugly startWithAppId:@"2b86bf5580"];
+
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];

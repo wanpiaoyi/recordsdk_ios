@@ -89,7 +89,7 @@
     for(SubtitlePreview *subPre in self.array_previews){
         if(subPre.type == 1){
             UIImageView *img = [[UIImageView alloc] initWithFrame:subPre.rect];
-            img.image = [UIImage imageNamed:subPre.img_name];
+            img.image = [UIImage imageNamed:subPre.img_name inBundle:[clipPubthings clipBundle] compatibleWithTraitCollection:nil];
             [v_allPreview addSubview:img];
         }else{
             if(subPre.addBackground){
@@ -229,7 +229,7 @@
     if(self.img_insert == nil){
         UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 7, 7)];
         long type = self.subTitleId%10;
-        img.image = [UIImage imageNamed:[NSString stringWithFormat:@"qktool_subtitle_add%ld",type]];
+        img.image = [UIImage imageNamed:[NSString stringWithFormat:@"qktool_subtitle_add%ld",type] inBundle:[clipPubthings clipBundle] compatibleWithTraitCollection:nil];
         self.img_insert = img;
     }
     return self.img_insert;
