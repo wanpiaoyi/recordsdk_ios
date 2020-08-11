@@ -15,6 +15,7 @@ QKRecordSDK
 Privacy - Camera Usage Description  
 Privacy - Bluetooth Peripheral Usage Description  
 Privacy - Bluetooth Always Usage Description
+
 Privacy - Microphone Usage Description  
 Privacy - Photo Library Additions Usage Description  
 Privacy - Photo Library Usage Description  
